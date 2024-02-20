@@ -1,0 +1,13 @@
+@inject IArkhamDbService ArkhamDbService;
+
+@if (!String.IsNullOrEmpty(ImageSource)) {
+<div>
+    <img src="@ImageSource" class="img-thumbnail cardPreview" height="200" />
+</div>
+}
+
+@code {
+    [Parameter]
+    [EditorRequired]
+    public string? ImageSource { get; set; }
+}

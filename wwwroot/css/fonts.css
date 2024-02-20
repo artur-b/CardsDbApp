@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Teutonic';
+    src: url('../fonts/Teutonic.ttf') format('truetype'),
+        url('../fonts/Teutonic.woff2') format('woff2'),
+        url('../fonts/Teutonic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ArkhamSymbols';
+    src: url('../fonts/arkhamslin.ttf') format('truetype'),
+        url('../fonts/arkhamslin.woff2') format('woff2'),
+        url('../fonts/arkhamslin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

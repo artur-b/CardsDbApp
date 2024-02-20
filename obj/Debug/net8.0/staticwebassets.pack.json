@@ -1,0 +1,109 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/bzd/Projects/CardsDbApp/obj/Debug/net8.0/scopedcss/projectbundle/CardsDbApp.bundle.scp.css",
+      "PackagePath": "staticwebassets/CardsDbApp.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/bzd/Projects/CardsDbApp/wwwroot/css/app.css",
+      "PackagePath": "staticwebassets/css/app.css"
+    },
+    {
+      "Id": "/Users/bzd/Projects/CardsDbApp/wwwroot/css/fonts.css",
+      "PackagePath": "staticwebassets/css/fonts.css"
+    },
+    {
+      "Id": "/Users/bzd/Projects/CardsDbApp/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/bzd/Projects/CardsDbApp/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
+    },
+    {
+      "Id": "/Users/bzd/Projects/CardsDbApp/wwwroot/fonts/Teutonic.ttf",
+      "PackagePath": "staticwebassets/fonts/Teutonic.ttf"
+    },
+    {
+      "Id": "/Users/bzd/Projects/CardsDbApp/wwwroot/fonts/Teutonic.woff",
+      "PackagePath": "staticwebassets/fonts/Teutonic.woff"
+    },
+    {
+      "Id": "/Users/bzd/Projects/CardsDbApp/wwwroot/fonts/Teutonic.woff2",
+      "PackagePath": "staticwebassets/fonts/Teutonic.woff2"
+    },
+    {
+      "Id": "/Users/bzd/Projects/CardsDbApp/wwwroot/fonts/arkhamslim.ttf",
+      "PackagePath": "staticwebassets/fonts/arkhamslim.ttf"
+    },
+    {
+      "Id": "/Users/bzd/Projects/CardsDbApp/wwwroot/fonts/arkhamslim.woff",
+      "PackagePath": "staticwebassets/fonts/arkhamslim.woff"
+    },
+    {
+      "Id": "/Users/bzd/Projects/CardsDbApp/wwwroot/fonts/arkhamslim.woff2",
+      "PackagePath": "staticwebassets/fonts/arkhamslim.woff2"
+    },
+    {
+      "Id": "/Users/bzd/Projects/CardsDbApp/wwwroot/images/AH_Investigator_seeker.png",
+      "PackagePath": "staticwebassets/images/AH_Investigator_seeker.png"
+    },
+    {
+      "Id": "/Users/bzd/Projects/CardsDbApp/wwwroot/images/AH_Investigator_survivor.png",
+      "PackagePath": "staticwebassets/images/AH_Investigator_survivor.png"
+    },
+    {
+      "Id": "/Users/bzd/Projects/CardsDbApp/wwwroot/images/AH_elder_sign.png",
+      "PackagePath": "staticwebassets/images/AH_elder_sign.png"
+    },
+    {
+      "Id": "/Users/bzd/Projects/CardsDbApp/wwwroot/images/AH_investigator_guardian.png",
+      "PackagePath": "staticwebassets/images/AH_investigator_guardian.png"
+    },
+    {
+      "Id": "/Users/bzd/Projects/CardsDbApp/wwwroot/images/AH_investigator_mystic.png",
+      "PackagePath": "staticwebassets/images/AH_investigator_mystic.png"
+    },
+    {
+      "Id": "/Users/bzd/Projects/CardsDbApp/wwwroot/images/AH_investigator_neutral.png",
+      "PackagePath": "staticwebassets/images/AH_investigator_neutral.png"
+    },
+    {
+      "Id": "/Users/bzd/Projects/CardsDbApp/wwwroot/images/AH_investigator_rogue.png",
+      "PackagePath": "staticwebassets/images/AH_investigator_rogue.png"
+    },
+    {
+      "Id": "/Users/bzd/Projects/CardsDbApp/wwwroot/images/Logo_elder_sign.png",
+      "PackagePath": "staticwebassets/images/Logo_elder_sign.png"
+    },
+    {
+      "Id": "/Users/bzd/Projects/CardsDbApp/wwwroot/images/bg_Baranger_WP05.jpg",
+      "PackagePath": "staticwebassets/images/bg_Baranger_WP05.jpg"
+    },
+    {
+      "Id": "/Users/bzd/Projects/CardsDbApp/wwwroot/images/favicon-16x16.png",
+      "PackagePath": "staticwebassets/images/favicon-16x16.png"
+    },
+    {
+      "Id": "/Users/bzd/Projects/CardsDbApp/wwwroot/images/favicon-32x32.png",
+      "PackagePath": "staticwebassets/images/favicon-32x32.png"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.CardsDbApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.CardsDbApp.props",
+      "PackagePath": "build\\CardsDbApp.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.CardsDbApp.props",
+      "PackagePath": "buildMultiTargeting\\CardsDbApp.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.CardsDbApp.props",
+      "PackagePath": "buildTransitive\\CardsDbApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

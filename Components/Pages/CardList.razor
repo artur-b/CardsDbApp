@@ -1,0 +1,70 @@
+﻿@page "/cards"
+@rendermode InteractiveServer
+@inject ICardService CardService;
+
+<PageTitle>Card List</PageTitle>
+
+<div class="container-fluid bannerBg">
+<div class="container mt-3">
+
+    <h2 class="mb-3">Card List</h2>
+
+    @if (cards == null)
+    {
+    <div>
+        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+        <span class="sr-only">Loading...</span>
+    </div>
+    }
+    else
+    {
+    <div class="row">
+        <div class="col col-md-4 text-md-start">
+            <ol class="list-group">
+                @foreach (var card in cards)
+                {
+                <button @onmouseover="@(() => SetImage(card.AHDBCode))" @onmouseout="ResetImage" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                    <div class="faction-text-@card.Color.ToLower()">
+                        @card.Name
+                        <span class="badge text-bg-info rounded-pill mx-2">@card.Cost</span>
+                    </div>
+                    <a href="/card/@card.Id" class="btn btn-sm btn-outline-info"> Details <i class="bi bi-caret-right-fill"></i> </a>               
+                </button>
+                }
+                <button class="list-group-item d-flex align-items-center">
+                    <div>
+                        <!-- paginator //-->
+                        ...
+                    </div>
+                </button>
+            </ol>
+        </div>
+        <div class="col col-md-4 text-md-start">  
+            @if (!String.IsNullOrEmpty(imageSource)) {
+                <CardImage 
+                    ImageSource="@imageSource" />
+            }
+        </div>
+    </div>
+    }
+
+</div>
+</div>
+
+@code {
+    private IEnumerable<CardItem>? cards = [];
+    private string imageSource = String.Empty;  
+
+    protected override async Task OnInitializedAsync()
+    {
+        cards = await CardService.GetCards();
+    }
+    private void SetImage(string Code) 
+    {
+        imageSource = $"https://arkhamdb.com/bundles/cards/{Code}.png";
+    }
+    private void ResetImage() 
+    {
+        imageSource = String.Empty;
+    }
+}

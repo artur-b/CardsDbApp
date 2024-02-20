@@ -1,0 +1,55 @@
+@page "/card/{id:int}"
+@inject ICardService CardService;
+@inject IArkhamDbService ArkhamDbService;
+
+<div class="container mt-3">
+
+@if (cardDetails is not null) {
+
+<h2>@cardDetails.Name</h2>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col col-md-4 text-md-start"> 
+            <img src="@imageSource" class="img-thumbnail" height="300" />
+        </div>
+        <div class="col col-md-4 cardDetails">
+            <p>Pack: <b>@cardDetails.PackName</b> </p>
+            <p>Faction: <img src="@factionImageSource" height="14" /> <b>@cardDetails.FactionName</b> </p>
+            <p>Type: <b>@cardDetails.TypeName</b> </p>
+            <p>Cost: <b>@cardDetails.Cost</b> </p>
+            <p>Traits: <b>@cardDetails.Traits</b> </p>
+            <p>ArkhamDb Id: <b>@cardDetails.Code</b> </p>
+            <p>Taboo: <b>-</b> </p>
+            <div class="md-0"><a href="/" class="btn btn-sm btn-outline-info"><i class="bi bi-caret-left-fill"></i> Back</a></div>
+        </div>
+    </div>
+
+</div>
+
+} else {
+    <p>still loading...</p>
+}
+</div>
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+    private ArkhamDbApiResponse? cardDetails;
+    private string? imageSource = String.Empty;
+    private string? factionImageSource = String.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        
+        var cardObject = await CardService.GetCard(Id);
+        if (cardObject is not null) {
+            cardDetails = await ArkhamDbService.GetCardObject(cardObject.AHDBCode);
+        }
+        if (cardDetails is not null) {
+            imageSource = $"https://arkhamdb.com/{cardDetails.ImageSrc}";
+            factionImageSource = $"images/AH_investigator_{@cardDetails.FactionName.ToLower()}.png";
+        }
+    }
+}
